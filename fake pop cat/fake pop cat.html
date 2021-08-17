@@ -3,7 +3,7 @@
 
 <head>
     <title>
-        fake pop cat
+        POP Thanwa
     </title>
 
     <style>
@@ -16,35 +16,34 @@
             margin: 0;
         }
 
-        #full-screen-background-image {
+        div {
+            position: relative;
+            text-align: center;
+        }
+
+        #my-image {
             z-index: -999;
-            min-height: 100%;
-            min-width: 1024px;
-            width: 100%;
-            height: auto;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center top;
+            width: auto;
+            height: 100%;
             position: fixed;
             top: 0;
             left: 0;
         }
 
-        #wrapper {
-            position: relative;
-            width: 800px;
-            min-height: 400px;
-            margin: 100px auto;
-            color: #333;
-        }
     </style>
 </head>
 
-<body onclick="pop()">
+<body onclick="pop()" onkeypress="pop()">
 
-    <img alt="full screen background image" src="green.jpg" id="full-screen-background-image">
+    <img alt="full screen background image" src="./src/1.jpg" id="my-image">
 
-    <DIV STYLE="position:absolute; top:200px; left:50px; width:200px; height:25px">
-        <h1>fake pop cat</h1>
+    <div>
+        <h1>POP Thanwa</h1>
         <h2 id="point">0</h2>
-    </DIV>
+    </div>
 
     <script src="app.js"></script>
 </body>
