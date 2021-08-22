@@ -2,11 +2,11 @@ var point = 0;
 function pop(){
     point = point + 1;
     document.getElementById("point").innerHTML = point
-    var img = document.getElementById("my-image")
-    console.log(img.getAttribute("src"))
-    if (img.getAttribute("src") == './src/1.jpg') {
-        document.getElementById('my-image').src ='./src/2.jpg'
-    } else {
-        document.getElementById('my-image').src = './src/1.jpg'
-    }
+    // var body_bg = document.getElementById("my-image-bg"), style = body_bg.currentStyle || window.getComputedStyle(body_bg, false), bi = style.backgroundImage.slice(4, -1).replace(/"/g, "");
+    // console.log('Image URL: ' + bi)
+//     if (bi == './src/1.jpg') {
+//         document.getElementById("my-image-bg").style.backgroundImage = 'url(./src/2.jpg)'
+//     } else {
+//         document.getElementById("my-image-bg").style.backgroundImage = 'url(./src/2.jpg)'
+//     }
 }

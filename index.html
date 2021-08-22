@@ -7,45 +7,54 @@
     </title>
 
     <style>
-        html,
-        body {
-            height: 100%;
-            width: 100%;
-            overflow: hidden;
-            padding: 0;
-            margin: 0;
+        .container {
+            position: relative;
+
         }
 
-        div {
+        .text_score {
             position: relative;
             text-align: center;
+            width: 100%;
+            font-size: 50px;
+            z-index: 1;
         }
 
-        #my-image {
-            z-index: -999;
+        .button {
+            display: inline-flex;
+            align-items: flex-start;
+            background-image: url(./src/1.jpg);
             background-repeat: no-repeat;
             background-attachment: fixed;
-            background-position: center top;
-            width: auto;
-            height: 100%;
-            position: fixed;
-            top: 0;
-            left: 0;
+            background-size: auto 100%;
+            background-position: center;
+            position: relative;
+            height: 2000px;
+            width: 100%;
         }
 
+        .button:active {
+            background-image: url(./src/2.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: auto 100%;
+            background-position: center;
+        }
     </style>
 </head>
 
-<body onclick="pop()" onkeypress="pop()">
-
-    <img alt="full screen background image" src="./src/1.jpg" id="my-image">
-
-    <div>
-        <h1>POP Thanwa</h1>
-        <h2 id="point">0</h2>
+<body>
+    <div class="container">
+        <button onclick="pop()" onkeypress="pop()" id="my-image-bg" class="button">
+            <div class="text_score">
+                <h1>POP Thanwa</h1>
+                <h1 id="point">0</h1>
+            </div>
+            <script src="app.js"></script>
+        </button>
     </div>
 
-    <script src="app.js"></script>
+
 </body>
 
 </html>
